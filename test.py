@@ -9,7 +9,7 @@ client.hgetall()
 a = client.hgetall()
 
 def func(c):
-    return c.hgetall()
+    return c.hgetall()  # pylint: disable=redis-bad-performance
 
 func(client)
 
